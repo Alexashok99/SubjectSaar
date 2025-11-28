@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}
+Subject Summaries (Saar) - Subject Saar
+{% endblock %}
+
+{% block content %}
+<section id="tests" class="test-list-section"> 
+    
+    <h2>Popular Subject Saars</h2>
+    <div class="card-container">
+    <div class="test-card" data-test-id="mathematics_saar">
+        <h3>Mathematics</h3>
+        <p>Concise notes on Arithmatic and Advanced Mathematics.</p>
+        <span class="test-count">50+ Summaries</span>
+        <button class="card-button">Read Saar</button>
+    </div>
+
+    <div class="test-card" data-test-id="social_saar">
+        <h3>Social Science</h3>
+        <p>The essence of Polity, Geography, world and Indian history.</p>
+        <span class="test-count">30+ Summaries</span>
+        <button class="card-button">Read Saar</button>
+    </div>
+
+    <div class="test-card" data-test-id="science_saar">
+        <h3>Science</h3>
+        <p>Concise notes on Physics, Chemistry, and Biology.</p>
+        <span class="test-count">50+ Summaries</span>
+        <button class="card-button">Read Saar</button>
+    </div>
+</div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Test Loading...</title>
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test_style.css') }}">
+</head>
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1 class="welcome-title" id="welcomeTestTitle">VVI Math</h1>
+        
+        <div class="welcome-details">
+            <div class="welcome-detail">
+                <span class="welcome-detail-label">Test ID</span>
+                <span class="welcome-detail-value" id="testIdValue">999999</span>
+            </div>
+            <div class="welcome-detail">
+                <span class="welcome-detail-label">Total Questions:</span>
+                <span class="welcome-detail-value" id="totalQuestionsValue">--</span> 
+            </div>
+            <div class="welcome-detail">
+                <span class="welcome-detail-label">Total Marks:</span>
+                <span class="welcome-detail-value" id="totalMarksValue">--</span> 
+            </div>
+            <div class="welcome-detail">
+                <span class="welcome-detail-label">Duration:</span>
+                <span class="welcome-detail-value" id="durationValue">--</span> 
+            </div>
+            <div class="welcome-detail">
+                <span class="welcome-detail-label">Marking:</span>
+                <span class="welcome-detail-value" id="markingValue">+1 / -0.25</span>
+            </div>
+        </div>
+        
+        <div class="welcome-instructions">
+            <h3>Instructions</h3>
+            <ul>
+                <li>Read each question carefully before answering</li>
+                <li>You can mark questions for review and come back later</li>
+                <li>The timer will automatically submit the test when time is up</li>
+                <li>Negative marking applies for wrong answers</li>
+            </ul>
+        </div>
+        
+        <div class="welcome-buttons">
+            <button class="welcome-button" id="startTestBtn">
+                <i class="fas fa-play"></i> Start Test
+            </button>
+            
+            <a href="https://t.me/+5jfTiMIe64wxNmQ1" target="_blank" class="join-channel">
+                <i class="fab fa-telegram"></i> Join Our Channel
+            </a>
+        </div>
+    </div>
+
+    <div style="display:none" id="mainTestInterface">
+        <div class="hdr">
+            <div class="hdr-l">
+                <div class="q-info" id="qInfo">Q1/<span id="qTotal">--</span></div>
+                <div class="timer" id="timer">--:--</div>
+            </div>
+            <div class="hdr-c">Bijay Mahto</div>
+            <div class="hdr-r">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                <button class="btn btn-o btn-sm" id="menuBtn"><i class="fas fa-th"></i></button>
+                <button class="btn btn-p btn-sm" id="subBtn">Submit</button>
+            </div>
+        </div>
+
+        <div class="cont">
+            
+            <div class="q-card">
+                <div class="lang">
+                    <button class="lang-btn active" id="engBtn">English</button>
+                    <button class="lang-btn" id="hinBtn">हिंदी</button>
+                </div>
+
+                <div id="compSec" class="comp" style="display:none">
+                    <h4><i class="fas fa-book"></i> Comprehension</h4>
+                    <div id="compCont"></div>
+                </div>
+
+                <div class="q-txt" id="qTxt"></div>
+                <div class="opts" id="opts"></div>
+
+                <div class="sol" id="sol">
+                    <div class="sol-info" id="solInfo"></div>
+                    <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                    <div id="solCont"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <button class="btn btn-o nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i> Prev</button>
+            <button class="btn btn-w nav-btn" id="reviewBtn"><i class="fas fa-flag"></i> Review</button>
+            <div class="prog">
+                <div id="progTxt">1 of <span id="progTotal">--</span></div>
+                <div style="font-size:11px">Answered: <span id="ansCnt">0</span> | <a href="https://t.me/+5jfTiMIe64wxNmQ1">Bijay Mahto</a></div>
+            </div>
+            <button class="btn btn-p nav-btn" id="nextBtn">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="desktop-sidebar" id="desktopSidebar">
+            <h3>Questions Navigator</h3>
+            <div class="q-grid" id="desktopQGrid"></div>
+            <div style="margin-top:20px;font-size:12px;color:var(--txtL)">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num ans" style="width:24px;height:24px">✓</div><span>Answered</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num review" style="width:24px;height:24px">!</div><span>Marked for Review</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num wrong" style="width:24px;height:24px">✗</div><span>Incorrect</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px">
+                    <div class="q-num unattempted" style="width:24px;height:24px">?</div><span>Unattempted</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="panel">
+            <div class="panel-hdr">
+                <h3>All Questions</h3>
+                <button class="panel-close" id="panelClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="q-grid" id="qGrid"></div>
+            <div style="padding:20px;font-size:12px;color:var(--txtL)">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num ans" style="width:24px;height:24px">✓</div><span>Answered</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num review" style="width:24px;height:24px">!</div><span>Marked for Review</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <div class="q-num wrong" style="width:24px;height:24px">✗</div><span>Incorrect</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px">
+                    <div class="q-num unattempted" style="width:24px;height:24px">?</div><span>Unattempted</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="print-btn" id="printBtn" style="display:none">
+            <i class="fas fa-print"></i>
+        </button>
+
+        <div class="modal" id="modalOver">
+            <div class="result">
+                <h2>Test Complete!</h2>
+                <div class="score" id="scoreDisp">0/<span id="modalTotalMarks">--</span></div>
+                <div class="stats">
+                    <div class="stat c"><div class="stat-val" id="corrStat">0</div><div class="stat-lbl">Correct</div></div>
+                    <div class="stat w"><div class="stat-val" id="incStat">0</div><div class="stat-lbl">Incorrect</div></div>
+                    <div class="stat"><div class="stat-val" id="unaStat">0</div><div class="stat-lbl">Unattempted</div></div>
+                    <div class="stat"><div class="stat-val" id="timeStat">0</div><div class="stat-lbl">Minutes</div></div>
+                </div>
+                <div class="modal-acts">
+                    <button class="btn btn-o modal-btn" id="closeModal">Close</button>
+                    <button class="btn btn-p modal-btn" id="revBtn">Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const JSON_DATA_URL = "{{ url_for('static', filename=json_file_path) | safe }}";
+    </script>
+    
+    <script src="{{ url_for('static', filename='js/test_script.js') }}"></script>
+
+</body>
+</html>

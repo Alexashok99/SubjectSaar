@@ -1,0 +1,181 @@
+{
+  "config": {
+    "testName": "Co-ordinate: Geometry",
+    "testId": "TOP00002",
+    "durationMinutes": 14,  
+    "totalMarks": 28,
+    "marksPerQuestion": 2,
+    "negativeMarking": 0.5,
+    "nameDisplay": "Bijay Mahto"
+  },
+  "questions": [
+ {
+    "question": "<span class=\"eqt\"><p>A point P is in the Second Quadrant (negative abscissa, positive ordinate). Its reflection across the origin is (4, -6). What are the coordinates of the original point P?</p></span><span class=\"hqt\" style=\"display:none\"><p>एक बिंदु P द्वितीय चतुर्थांश (ऋणात्मक भुज, धनात्मक कोटि) में है। मूल बिंदु के सापेक्ष इसका प्रतिबिंब (4, -6) है। मूल बिंदु P के निर्देशांक क्या हैं?</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>(4, -6)</p></span><span class=\"hqt\" style=\"display:none\"><p>(4, -6)</p></span>",
+      "<span class=\"eqt\"><p>(-4, 6)</p></span><span class=\"hqt\" style=\"display:none\"><p>(-4, 6)</p></span>",
+      "<span class=\"eqt\"><p>(4, 6)</p></span><span class=\"hqt\" style=\"display:none\"><p>(4, 6)</p></span>",
+      "<span class=\"eqt\"><p>(-4, -6)</p></span><span class=\"hqt\" style=\"display:none\"><p>(-4, -6)</p></span>"
+    ],
+    "correct_option_id": 1,
+    "solution": "<span class=\"eqt\"><p>The reflection of a point (x, y) across the origin is (-x, -y). We are given that the reflection is (4, -6). So, -x = 4 and -y = -6. This means x = -4 and y = 6. The original point P is (-4, 6). This fits the description: negative abscissa (-4) and positive ordinate (6), placing it in the Second Quadrant.</p></span><span class=\"hqt\" style=\"display:none\"><p>मूल बिंदु के सापेक्ष एक बिंदु (x, y) का प्रतिबिंब (-x, -y) होता है। हमें दिया गया है कि प्रतिबिंब (4, -6) है। तो, -x = 4 और -y = -6। इसका मतलब है x = -4 और y = 6। मूल बिंदु P (-4, 6) है। यह विवरण से मेल खाता है: ऋणात्मक भुज (-4) और धनात्मक कोटि (6), जो इसे द्वितीय चतुर्थांश में रखता है।</p></span>",
+    "question_index": 1
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Point M(4, 6) is the midpoint of the line segment joining A(1, 3) and B. Find the coordinates of point B, and then find the distance of point B from the origin (0, 0).</p></span><span class=\"hqt\" style=\"display:none\"><p>बिंदु M(4, 6) बिंदुओं A(1, 3) और B को मिलाने वाले रेखाखंड का मध्यबिंदु है। बिंदु B के निर्देशांक ज्ञात कीजिए, और फिर बिंदु B की मूल बिंदु (0, 0) से दूरी ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>B(5, 7) and D = &radic;74</p></span><span class=\"hqt\" style=\"display:none\"><p>B(5, 7) और D = &radic;74</p></span>",
+      "<span class=\"eqt\"><p>B(7, 9) and D = 11</p></span><span class=\"hqt\" style=\"display:none\"><p>B(7, 9) और D = 11</p></span>",
+      "<span class=\"eqt\"><p>B(7, 9) and D = &radic;130</p></span><span class=\"hqt\" style=\"display:none\"><p>B(7, 9) और D = &radic;130</p></span>",
+      "<span class=\"eqt\"><p>B(5, 7) and D = &radic;110</p></span><span class=\"hqt\" style=\"display:none\"><p>B(5, 7) और D = &radic;110</p></span>"
+    ],
+    "correct_option_id": 2,
+    "solution": "<span class=\"eqt\"><p>Let B = (x, y). Using the midpoint formula: (x₁+x)/2 = X and (y₁+y)/2 = Y. So, (1+x)/2 = 4 &rarr; 1+x = 8 &rarr; x = 7. And, (3+y)/2 = 6 &rarr; 3+y = 12 &rarr; y = 9. So, B = (7, 9). Now, distance from origin D = &radic;((7-0)&sup2; + (9-0)&sup2;) = &radic;(49 + 81) = &radic;130.</p></span><span class=\"hqt\" style=\"display:none\"><p>मान लीजिए B = (x, y) है। मध्यबिंदु सूत्र का उपयोग करते हुए: (x₁+x)/2 = X और (y₁+y)/2 = Y। तो, (1+x)/2 = 4 &rarr; 1+x = 8 &rarr; x = 7। और, (3+y)/2 = 6 &rarr; 3+y = 12 &rarr; y = 9। तो, B = (7, 9) है। अब, मूल बिंदु से दूरी D = &radic;((7-0)&sup2; + (9-0)&sup2;) = &radic;(49 + 81) = &radic;130।</p></span>",
+    "question_index": 2
+  },
+  {
+    "question": "<span class=\"eqt\"><p>The vertices of a triangle are A(1, 7), B(3, 1), and C(8, 7). Find the coordinates of its centroid (G) and its area (A).</p></span><span class=\"hqt\" style=\"display:none\"><p>एक त्रिभुज के शीर्ष A(1, 7), B(3, 1), और C(8, 7) हैं। इसके केन्द्रक (G) के निर्देशांक और इसका क्षेत्रफल (A) ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>G(5, 4) and A=21</p></span><span class=\"hqt\" style=\"display:none\"><p>G(5, 4) और A=21</p></span>",
+      "<span class=\"eqt\"><p>G(4, 5) and A=42</p></span><span class=\"hqt\" style=\"display:none\"><p>G(4, 5) और A=42</p></span>",
+      "<span class=\"eqt\"><p>G(12, 15) and A=24.5</p></span><span class=\"hqt\" style=\"display:none\"><p>G(12, 15) और A=24.5</p></span>",
+      "<span class=\"eqt\"><p>G(4, 5) and A=21</p></span><span class=\"hqt\" style=\"display:none\"><p>G(4, 5) और A=21</p></span>"
+    ],
+    "correct_option_id": 3,
+    "solution": "<span class=\"eqt\"><p>Centroid G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3) = ((1+3+8)/3, (7+1+7)/3) = (12/3, 15/3) = (4, 5). For Area, notice A and C have the same y-coordinate (y=7), so AC is a horizontal base. Base length = 8 - 1 = 7. Height is the perpendicular distance from B to the line y=7, which is |7 - 1| = 6. Area = 1/2 * base * height = 1/2 * 7 * 6 = 21 sq. units.</p></span><span class=\"hqt\" style=\"display:none\"><p>केन्द्रक G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3) = ((1+3+8)/3, (7+1+7)/3) = (12/3, 15/3) = (4, 5)। क्षेत्रफल के लिए, ध्यान दें कि A और C का y-निर्देशांक समान है (y=7), इसलिए AC एक क्षैतिज आधार है। आधार की लंबाई = 8 - 1 = 7। ऊंचाई B से रेखा y=7 तक की लंबवत दूरी है, जो |7 - 1| = 6 है। क्षेत्रफल = 1/2 * आधार * ऊंचाई = 1/2 * 7 * 6 = 21 वर्ग इकाई।</p></span>",
+    "question_index": 3
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the equation of a line that passes through the point of intersection of x+y=5 and 2x-y=4, and is parallel to the line 3x+y=7.</p></span><span class=\"hqt\" style=\"display:none\"><p>उस रेखा का समीकरण ज्ञात कीजिए जो x+y=5 और 2x-y=4 के प्रतिच्छेदन बिंदु से होकर गुजरती है, और रेखा 3x+y=7 के समानांतर है।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>x-3y+3=0</p></span><span class=\"hqt\" style=\"display:none\"><p>x-3y+3=0</p></span>",
+      "<span class=\"eqt\"><p>3x+y-11=0</p></span><span class=\"hqt\" style=\"display:none\"><p>3x+y-11=0</p></span>",
+      "<span class=\"eqt\"><p>3x+y-7=0</p></span><span class=\"hqt\" style=\"display:none\"><p>3x+y-7=0</p></span>",
+      "<span class=\"eqt\"><p>x+3y-9=0</p></span><span class=\"hqt\" style=\"display:none\"><p>x+3y-9=0</p></span>"
+    ],
+    "correct_option_id": 1,
+    "solution": "<span class=\"eqt\"><p>First, find the intersection. Add the two equations: (x+y) + (2x-y) = 5+4 &rarr; 3x = 9 &rarr; x = 3. Substitute x=3 into x+y=5 &rarr; 3+y=5 &rarr; y=2. The point is (3, 2). The slope of 3x+y=7 is m = -a/b = -3/1 = -3. A parallel line has the same slope. Using point-slope form: y - 2 = -3(x - 3) &rarr; y - 2 = -3x + 9 &rarr; 3x + y - 11 = 0.</p></span><span class=\"hqt\" style=\"display:none\"><p>पहले, प्रतिच्छेदन बिंदु ज्ञात करें। दोनों समीकरणों को जोड़ें: (x+y) + (2x-y) = 5+4 &rarr; 3x = 9 &rarr; x = 3। x=3 को x+y=5 में रखें &rarr; 3+y=5 &rarr; y=2। बिंदु (3, 2) है। 3x+y=7 की प्रवणता m = -a/b = -3/1 = -3 है। एक समानांतर रेखा की प्रवणता समान होती है। बिंदु-प्रवणता रूप का उपयोग करते हुए: y - 2 = -3(x - 3) &rarr; y - 2 = -3x + 9 &rarr; 3x + y - 11 = 0।</p></span>",
+    "question_index": 4
+  },
+  {
+    "question": "<span class=\"eqt\"><p>For what value of 'k' are the lines 2x + 5y = 7 and 4x + ky = 14 coincident? Using this 'k', find 'm' for which 2x + 5y = 7 is perpendicular to mx - 2y = 3.</p></span><span class=\"hqt\" style=\"display:none\"><p>'k' के किस मान के लिए रेखाएँ 2x + 5y = 7 और 4x + ky = 14 संपाती हैं? इस 'k' का उपयोग करते हुए, 'm' ज्ञात कीजिए जिसके लिए 2x + 5y = 7, रेखा mx - 2y = 3 पर लंबवत है।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>k=5, m=10</p></span><span class=\"hqt\" style=\"display:none\"><p>k=5, m=10</p></span>",
+      "<span class=\"eqt\"><p>k=10, m=-5</p></span><span class=\"hqt\" style=\"display:none\"><p>k=10, m=-5</p></span>",
+      "<span class=\"eqt\"><p>k=10, m=5</p></span><span class=\"hqt\" style=\"display:none\"><p>k=10, m=5</p></span>",
+      "<span class=\"eqt\"><p>k=2.5, m=5</p></span><span class=\"hqt\" style=\"display:none\"><p>k=2.5, m=5</p></span>"
+    ],
+    "correct_option_id": 2,
+    "solution": "<span class=\"eqt\"><p>For coincident lines, a₁/a₂ = b₁/b₂ = c₁/c₂. Here, 2/4 = 5/k = 7/14. All ratios must be 1/2. So, 5/k = 1/2 &rarr; k = 10. For perpendicular lines, m₁*m₂ = -1. Slope of L1 (m₁) = -2/5. Slope of L2 (m₂) = -m/(-2) = m/2. So, (-2/5) * (m/2) = -1 &rarr; -2m/10 = -1 &rarr; -m/5 = -1 &rarr; m = 5.</p></span><span class=\"hqt\" style=\"display:none\"><p>संपाती रेखाओं के लिए, a₁/a₂ = b₁/b₂ = c₁/c₂। यहाँ, 2/4 = 5/k = 7/14। सभी अनुपात 1/2 होने चाहिए। तो, 5/k = 1/2 &rarr; k = 10। लंबवत रेखाओं के लिए, m₁*m₂ = -1। L1 की प्रवणता (m₁) = -2/5। L2 की प्रवणता (m₂) = -m/(-2) = m/2। तो, (-2/5) * (m/2) = -1 &rarr; -2m/10 = -1 &rarr; -m/5 = -1 &rarr; m = 5।</p></span>",
+    "question_index": 5
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the center and radius of the circle given by the general equation x²+y²-6x+10y+9=0.</p></span><span class=\"hqt\" style=\"display:none\"><p>सामान्य समीकरण x²+y²-6x+10y+9=0 द्वारा दिए गए वृत्त का केंद्र और त्रिज्या ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>Center: (-3, 5), Radius: 5</p></span><span class=\"hqt\" style=\"display:none\"><p>केंद्र: (-3, 5), त्रिज्या: 5</p></span>",
+      "<span class=\"eqt\"><p>Center: (3, -5), Radius: 25</p></span><span class=\"hqt\" style=\"display:none\"><p>केंद्र: (3, -5), त्रिज्या: 25</p></span>",
+      "<span class=\"eqt\"><p>Center: (-3, 5), Radius: &radic;43</p></span><span class=\"hqt\" style=\"display:none\"><p>केंद्र: (-3, 5), त्रिज्या: &radic;43</p></span>",
+      "<span class=\"eqt\"><p>Center: (3, -5), Radius: 5</p></span><span class=\"hqt\" style=\"display:none\"><p>केंद्र: (3, -5), त्रिज्या: 5</p></span>"
+    ],
+    "correct_option_id": 3,
+    "solution": "<span class=\"eqt\"><p>Compare to x²+y²+2gx+2fy+c=0. We have 2g=-6 &rarr; g=-3. And 2f=10 &rarr; f=5. And c=9. The center is (-g, -f) = (3, -5). The radius is r = &radic;(g²+f²-c) = &radic;((-3)²+5²-9) = &radic;(9+25-9) = &radic;25 = 5.</p></span><span class=\"hqt\" style=\"display:none\"><p>x²+y²+2gx+2fy+c=0 से तुलना करें। हमारे पास 2g=-6 &rarr; g=-3 है। और 2f=10 &rarr; f=5 है। और c=9 है। केंद्र (-g, -f) = (3, -5) है। त्रिज्या r = &radic;(g²+f²-c) = &radic;((-3)²+5²-9) = &radic;(9+25-9) = &radic;25 = 5 है।</p></span>",
+    "question_index": 6
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the area of the triangle formed by the line 3x + 4y = 24 with the x-axis and y-axis. Also, find the length of the perpendicular (d) from the origin (0,0) to this line.</p></span><span class=\"hqt\" style=\"display:none\"><p>रेखा 3x + 4y = 24 द्वारा x-अक्ष और y-अक्ष के साथ बनाए गए त्रिभुज का क्षेत्रफल ज्ञात कीजिए। साथ ही, मूल बिंदु (0,0) से इस रेखा पर लंब (d) की लंबाई ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>Area = 24, d = 4.8</p></span><span class=\"hqt\" style=\"display:none\"><p>क्षेत्रफल = 24, d = 4.8</p></span>",
+      "<span class=\"eqt\"><p>Area = 48, d = 4.8</p></span><span class=\"hqt\" style=\"display:none\"><p>क्षेत्रफल = 48, d = 4.8</p></span>",
+      "<span class=\"eqt\"><p>Area = 12, d = 5</p></span><span class=\"hqt\" style=\"display:none\"><p>क्षेत्रफल = 12, d = 5</p></span>",
+      "<span class=\"eqt\"><p>Area = 24, d = 24/25</p></span><span class=\"hqt\" style=\"display:none\"><p>क्षेत्रफल = 24, d = 24/25</p></span>"
+    ],
+    "correct_option_id": 0,
+    "solution": "<span class=\"eqt\"><p>x-intercept (y=0): 3x = 24 &rarr; x = 8. Base = 8. y-intercept (x=0): 4y = 24 &rarr; y = 6. Height = 6. Area = 1/2 * Base * Height = 1/2 * 8 * 6 = 24 sq. units. Perpendicular distance d = |ax₁+by₁+c|/&radic;(a²+b²) = |3(0)+4(0)-24|/&radic;(3²+4²) = |-24|/&radic;25 = 24/5 = 4.8.</p></span><span class=\"hqt\" style=\"display:none\"><p>x-अंतःखंड (y=0): 3x = 24 &rarr; x = 8। आधार = 8। y-अंतःखंड (x=0): 4y = 24 &rarr; y = 6। ऊंचाई = 6। क्षेत्रफल = 1/2 * आधार * ऊंचाई = 1/2 * 8 * 6 = 24 वर्ग इकाई। लंबवत दूरी d = |ax₁+by₁+c|/&radic;(a²+b²) = |3(0)+4(0)-24|/&radic;(3²+4²) = |-24|/&radic;25 = 24/5 = 4.8।</p></span>",
+    "question_index": 7
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the coordinates of the point that divides the line segment joining P(2, 3) and Q(7, 8) externally in the ratio 4:1.</p></span><span class=\"hqt\" style=\"display:none\"><p>उस बिंदु के निर्देशांक ज्ञात कीजिए जो बिंदुओं P(2, 3) और Q(7, 8) को मिलाने वाले रेखाखंड को 4:1 के अनुपात में बाह्य रूप से विभाजित करता है।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>(22/3, 23/3)</p></span><span class=\"hqt\" style=\"display:none\"><p>(22/3, 23/3)</p></span>",
+      "<span class=\"eqt\"><p>(17, 19)</p></span><span class=\"hqt\" style=\"display:none\"><p>(17, 19)</p></span>",
+      "<span class=\"eqt\"><p>(26/3, 29/3)</p></span><span class=\"hqt\" style=\"display:none\"><p>(26/3, 29/3)</p></span>",
+      "<span class=\"eqt\"><p>(34/5, 37/5)</p></span><span class=\"hqt\" style=\"display:none\"><p>(34/5, 37/5)</p></span>"
+    ],
+    "correct_option_id": 2,
+    "solution": "<span class=\"eqt\"><p>Using the external section formula: x = (mx₂-nx₁)/(m-n) and y = (my₂-ny₁)/(m-n). Here, m=4, n=1, (x₁,y₁)=(2,3), (x₂,y₂)=(7,8). x = (4*7 - 1*2)/(4-1) = (28-2)/3 = 26/3. y = (4*8 - 1*3)/(4-1) = (32-3)/3 = 29/3. The coordinates are (26/3, 29/3).</p></span><span class=\"hqt\" style=\"display:none\"><p>बाह्य विभाजन सूत्र का उपयोग करते हुए: x = (mx₂-nx₁)/(m-n) और y = (my₂-ny₁)/(m-n)। यहाँ, m=4, n=1, (x₁,y₁)=(2,3), (x₂,y₂)=(7,8) है। x = (4*7 - 1*2)/(4-1) = (28-2)/3 = 26/3। y = (4*8 - 1*3)/(4-1) = (32-3)/3 = 29/3। निर्देशांक (26/3, 29/3) हैं।</p></span>",
+    "question_index": 8
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the area of the quadrilateral formed by the parallel lines 4x+3y=12, 4x+3y=30, the x-axis, and the y-axis.</p></span><span class=\"hqt\" style=\"display:none\"><p>समानांतर रेखाओं 4x+3y=12, 4x+3y=30, x-अक्ष और y-अक्ष से बने चतुर्भुज का क्षेत्रफल ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>24 sq. units</p></span><span class=\"hqt\" style=\"display:none\"><p>24 वर्ग इकाई</p></span>",
+      "<span class=\"eqt\"><p>6 sq. units</p></span><span class=\"hqt\" style=\"display:none\"><p>6 वर्ग इकाई</p></span>",
+      "<span class=\"eqt\"><p>37.5 sq. units</p></span><span class=\"hqt\" style=\"display:none\"><p>37.5 वर्ग इकाई</p></span>",
+      "<span class=\"eqt\"><p>31.5 sq. units</p></span><span class=\"hqt\" style=\"display:none\"><p>31.5 वर्ग इकाई</p></span>"
+    ],
+    "correct_option_id": 3,
+    "solution": "<span class=\"eqt\"><p>This area is the area of the larger triangle (formed by 4x+3y=30) minus the area of the smaller triangle (formed by 4x+3y=12). Area₁ (Large): Intercepts are x=7.5 and y=10. Area = 1/2 * 7.5 * 10 = 37.5. Area₂ (Small): Intercepts are x=3 and y=4. Area = 1/2 * 3 * 4 = 6. Required Area = Area₁ - Area₂ = 37.5 - 6 = 31.5 sq. units.</p></span><span class=\"hqt\" style=\"display:none\"><p>यह क्षेत्रफल बड़े त्रिभुज (4x+3y=30 द्वारा निर्मित) के क्षेत्रफल में से छोटे त्रिभुज (4x+3y=12 द्वारा निर्मित) के क्षेत्रफल को घटाकर प्राप्त होता है। क्षेत्रफल₁ (बड़ा): अंतःखंड x=7.5 और y=10 हैं। क्षेत्रफल = 1/2 * 7.5 * 10 = 37.5। क्षेत्रफल₂ (छोटा): अंतःखंड x=3 और y=4 हैं। क्षेत्रफल = 1/2 * 3 * 4 = 6। आवश्यक क्षेत्रफल = क्षेत्रफल₁ - क्षेत्रफल₂ = 37.5 - 6 = 31.5 वर्ग इकाई।</p></span>",
+    "question_index": 9
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the circumcenter of the right-angled triangle with vertices A(1, 1), B(5, 1), and C(1, 4).</p></span><span class=\"hqt\" style=\"display:none\"><p>शीर्षों A(1, 1), B(5, 1), और C(1, 4) वाले समकोण त्रिभुज का परिकेन्द्र ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>(1, 1)</p></span><span class=\"hqt\" style=\"display:none\"><p>(1, 1)</p></span>",
+      "<span class=\"eqt\"><p>(3, 2)</p></span><span class=\"hqt\" style=\"display:none\"><p>(3, 2)</p></span>",
+      "<span class=\"eqt\"><p>(2.5, 3)</p></span><span class=\"hqt\" style=\"display:none\"><p>(2.5, 3)</p></span>",
+      "<span class=\"eqt\"><p>(3, 2.5)</p></span><span class=\"hqt\" style=\"display:none\"><p>(3, 2.5)</p></span>"
+    ],
+    "correct_option_id": 3,
+    "solution": "<span class=\"eqt\"><p>This is a right-angled triangle with the right angle at A(1, 1). The circumcenter of a right-angled triangle is the midpoint of its hypotenuse. The hypotenuse connects vertices B(5, 1) and C(1, 4). Midpoint = ((5+1)/2, (1+4)/2) = (6/2, 5/2) = (3, 2.5).</p></span><span class=\"hqt\" style=\"display:none\"><p>यह एक समकोण त्रिभुज है जिसका समकोण A(1, 1) पर है। एक समकोण त्रिभुज का परिकेन्द्र उसके कर्ण का मध्यबिंदु होता है। कर्ण शीर्षों B(5, 1) और C(1, 4) को जोड़ता है। मध्यबिंदु = ((5+1)/2, (1+4)/2) = (6/2, 5/2) = (3, 2.5)।</p></span>",
+    "question_index": 10
+  },
+  {
+    "question": "<span class=\"eqt\"><p>What is the standard equation of a sphere with its center at (1, -2, 5) and a radius of 3 units?</p></span><span class=\"hqt\" style=\"display:none\"><p>उस गोले का मानक समीकरण क्या है जिसका केंद्र (1, -2, 5) और त्रिज्या 3 इकाई है?</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>(x+1)&sup2; + (y-2)&sup2; + (z+5)&sup2; = 9</p></span><span class=\"hqt\" style=\"display:none\"><p>(x+1)&sup2; + (y-2)&sup2; + (z+5)&sup2; = 9</p></span>",
+      "<span class=\"eqt\"><p>(x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 3</p></span><span class=\"hqt\" style=\"display:none\"><p>(x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 3</p></span>",
+      "<span class=\"eqt\"><p>(x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 9</p></span><span class=\"hqt\" style=\"display:none\"><p>(x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 9</p></span>",
+      "<span class=\"eqt\"><p>(x-1)&sup2; + (y-2)&sup2; + (z-5)&sup2; = 9</p></span><span class=\"hqt\" style=\"display:none\"><p>(x-1)&sup2; + (y-2)&sup2; + (z-5)&sup2; = 9</p></span>"
+    ],
+    "correct_option_id": 2,
+    "solution": "<span class=\"eqt\"><p>The standard equation of a sphere is (x-a)&sup2; + (y-b)&sup2; + (z-c)&sup2; = R&sup2;. Substituting center (a,b,c) = (1, -2, 5) and R=3: (x-1)&sup2; + (y-(-2))&sup2; + (z-5)&sup2; = 3&sup2;. This simplifies to (x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 9.</p></span><span class=\"hqt\" style=\"display:none\"><p>एक गोले का मानक समीकरण (x-a)&sup2; + (y-b)&sup2; + (z-c)&sup2; = R&sup2; है। केंद्र (a,b,c) = (1, -2, 5) और R=3 रखने पर: (x-1)&sup2; + (y-(-2))&sup2; + (z-5)&sup2; = 3&sup2;। यह (x-1)&sup2; + (y+2)&sup2; + (z-5)&sup2; = 9 में सरल हो जाता है।</p></span>",
+    "question_index": 11
+  },
+  {
+    "question": "<span class=\"eqt\"><p>The centroid of a triangle ABC is at G(5, 5). If the coordinates of two vertices are A(3, 2) and B(7, 5), find the coordinates of the third vertex C.</p></span><span class=\"hqt\" style=\"display:none\"><p>एक त्रिभुज ABC का केन्द्रक G(5, 5) पर है। यदि दो शीर्षों के निर्देशांक A(3, 2) और B(7, 5) हैं, तो तीसरे शीर्ष C के निर्देशांक ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>(5, 3)</p></span><span class=\"hqt\" style=\"display:none\"><p>(5, 3)</p></span>",
+      "<span class=\"eqt\"><p>(1, 8)</p></span><span class=\"hqt\" style=\"display:none\"><p>(1, 8)</p></span>",
+      "<span class=\"eqt\"><p>(5, 8)</p></span><span class=\"hqt\" style=\"display:none\"><p>(5, 8)</p></span>",
+      "<span class=\"eqt\"><p>(8, 5)</p></span><span class=\"hqt\" style=\"display:none\"><p>(8, 5)</p></span>"
+    ],
+    "correct_option_id": 2,
+    "solution": "<span class=\"eqt\"><p>Let C = (x, y). Using the centroid formula: X = (x₁+x₂+x)/3 and Y = (y₁+y₂+y)/3. For the x-coordinate: 5 = (3+7+x)/3 &rarr; 15 = 10+x &rarr; x = 5. For the y-coordinate: 5 = (2+5+y)/3 &rarr; 15 = 7+y &rarr; y = 8. So, vertex C is (5, 8).</p></span><span class=\"hqt\" style=\"display:none\"><p>मान लीजिए C = (x, y) है। केन्द्रक सूत्र का उपयोग करते हुए: X = (x₁+x₂+x)/3 और Y = (y₁+y₂+y)/3। x-निर्देशांक के लिए: 5 = (3+7+x)/3 &rarr; 15 = 10+x &rarr; x = 5। y-निर्देशांक के लिए: 5 = (2+5+y)/3 &rarr; 15 = 7+y &rarr; y = 8। तो, शीर्ष C (5, 8) है।</p></span>",
+    "question_index": 12
+  },
+  {
+    "question": "<span class=\"eqt\"><p>Find the coordinates of the point P which divides the line joining A(1, 3) and B(6, 8) internally in the ratio 2:3. Then find the midpoint M of the segment PB.</p></span><span class=\"hqt\" style=\"display:none\"><p>उस बिंदु P के निर्देशांक ज्ञात कीजिए जो A(1, 3) और B(6, 8) को मिलाने वाली रेखा को 2:3 के अनुपात में आंतरिक रूप से विभाजित करता है। फिर खंड PB का मध्यबिंदु M ज्ञात कीजिए।</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>P(3, 5) & M(3, 4)</p></span><span class=\"hqt\" style=\"display:none\"><p>P(3, 5) & M(3, 4)</p></span>",
+      "<span class=\"eqt\"><p>P(4, 6) & M(5, 7)</p></span><span class=\"hqt\" style=\"display:none\"><p>P(4, 6) & M(5, 7)</p></span>",
+      "<span class=\"eqt\"><p>P(3.5, 5.5) & M(4.75, 6.75)</p></span><span class=\"hqt\" style=\"display:none\"><p>P(3.5, 5.5) & M(4.75, 6.75)</p></span>",
+      "<span class=\"eqt\"><p>P(3, 5) & M(4.5, 6.5)</p></span><span class=\"hqt\" style=\"display:none\"><p>P(3, 5) & M(4.5, 6.5)</p></span>"
+    ],
+    "correct_option_id": 3,
+    "solution": "<span class=\"eqt\"><p>Using the section formula: x = (mx₂+nx₁)/(m+n) = (2*6+3*1)/(2+3) = 15/5 = 3. y = (my₂+ny₁)/(m+n) = (2*8+3*3)/(2+3) = (16+9)/5 = 25/5 = 5. So P = (3, 5). Now, find the midpoint of P(3, 5) and B(6, 8). M = ((3+6)/2, (5+8)/2) = (9/2, 13/2) = (4.5, 6.5).</p></span><span class=\"hqt\" style=\"display:none\"><p>विभाजन सूत्र का उपयोग करते हुए: x = (mx₂+nx₁)/(m+n) = (2*6+3*1)/(2+3) = 15/5 = 3। y = (my₂+ny₁)/(m+n) = (2*8+3*3)/(2+3) = (16+9)/5 = 25/5 = 5। तो P = (3, 5)। अब, P(3, 5) और B(6, 8) का मध्यबिंदु ज्ञात करें। M = ((3+6)/2, (5+8)/2) = (9/2, 13/2) = (4.5, 6.5)।</p></span>",
+    "question_index": 13
+  },
+  {
+    "question": "<span class=\"eqt\"><p>What is the equation of a vertical line passing through the point (5, -2), and what is the ordinate (y-coordinate) of any point on the x-axis?</p></span><span class=\"hqt\" style=\"display:none\"><p>बिंदु (5, -2) से गुजरने वाली एक ऊर्ध्वाधर रेखा का समीकरण क्या है, और x-अक्ष पर किसी भी बिंदु की कोटि (y-निर्देशांक) क्या है?</p></span>",
+    "options": [
+      "<span class=\"eqt\"><p>Eq: y = -2, Ordinate: 0</p></span><span class=\"hqt\" style=\"display:none\"><p>समीकरण: y = -2, कोटि: 0</p></span>",
+      "<span class=\"eqt\"><p>Eq: x = 5, Ordinate: 0</p></span><span class=\"hqt\" style=\"display:none\"><p>समीकरण: x = 5, कोटि: 0</p></span>",
+      "<span class=\"eqt\"><p>Eq: x = 5, Ordinate: 5</p></span><span class=\"hqt\" style=\"display:none\"><p>समीकरण: x = 5, कोटि: 5</p></span>",
+      "<span class=\"eqt\"><p>Eq: y = -2, Ordinate: 5</p></span><span class=\"hqt\" style=\"display:none\"><p>समीकरण: y = -2, कोटि: 5</p></span>"
+    ],
+    "correct_option_id": 1,
+    "solution": "<span class=\"eqt\"><p>A vertical line has an undefined slope and its equation is always in the form x = c (a constant), as the x-coordinate is the same for all points on the line. Since it passes through (5, -2), the equation is x = 5. The ordinate is the y-coordinate. Any point on the x-axis has a y-coordinate of 0.</p></span><span class=\"hqt\" style=\"display:none\"><p>एक ऊर्ध्वाधर रेखा की प्रवणता अपरिभाषित होती है और इसका समीकरण हमेशा x = c (एक स्थिरांक) के रूप में होता है, क्योंकि रेखा पर सभी बिंदुओं के लिए x-निर्देशांक समान होता है। चूँकि यह (5, -2) से होकर गुजरती है, इसलिए समीकरण x = 5 है। कोटि y-निर्देशांक है। x-अक्ष पर किसी भी बिंदु का y-निर्देशांक 0 होता है।</p></span>",
+    "question_index": 14
+  }
+]
+}
