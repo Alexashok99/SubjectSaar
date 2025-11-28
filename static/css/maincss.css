@@ -1,0 +1,586 @@
+/* Color Palette: Black and Gold Theme */
+:root {
+    --black-color: #000000;         /* Primary Background: Pure Black */
+    --gold-color: #FFD700;          /* Main Accent/Text: Pure Gold */
+    --light-gold-hover: #FFFACD;    /* Light Gold for subtle hover effect */
+    --off-black-bg: #1a1a1a;        /* Section Background: Soft Black */
+    --text-color-light: #f0f0f0;    /* General Text: Off-White/Light Gray */
+}
+
+/* General Reset and Font */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--off-black-bg);
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+/* --- RESPONSIVE HEADER & NAVIGATION STYLES --- */
+
+/* Header Styling (Solid Black) */
+.main-header {
+    background-color: var(--black-color);
+    color: var(--text-color-light);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px solid var(--gold-color); 
+    /* For mobile menu positioning */
+    position: relative; 
+    z-index: 1000;
+}
+
+/* Logo and Text (Image one side, Text other side) */
+.logo {
+    display: flex; /* Logo Image and Text Side by Side */
+    align-items: center;
+    gap: 10px; /* Space between logo image and text */
+}
+
+.header-logo {
+    /* लोगो की ऊँचाई को नियंत्रित करें */
+    height: 45px; 
+    width: auto; 
+    display: block;
+    border-radius: 50%; /* Optional: If you want a circular logo holder */
+    padding: 2px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Stack Title and Subtitle */
+    line-height: 1.2;
+}
+
+.logo-text-title {
+    /* Title: Subject Saar */
+    font-size: 1.5em; 
+    font-weight: 700;
+    color: var(--gold-color);
+}
+
+.logo-text-subtitle {
+    /* Subtitle: Har subject ka saar */
+    font-size: 0.8em;
+    color: var(--text-color-light);
+    opacity: 0.7;
+}
+
+/* Main Navigation Links (Desktop Default) */
+.main-nav {
+    display: flex;
+    gap: 25px; /* Space between links */
+}
+
+.main-nav .nav-link {
+    color: var(--text-color-light);
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.main-nav .nav-link:hover {
+    color: var(--gold-color); /* Gold text on hover */
+    background-color: rgba(255, 215, 0, 0.1); /* Subtle gold background highlight */
+}
+.main-nav .nav-link.active {
+    color: var(--gold-color); 
+    border-bottom: 2px solid var(--gold-color); /* Active link indicator */
+}
+
+
+/* --- Mobile (Hamburger) Menu Toggle Setup --- */
+.nav-toggle,
+.nav-toggle-label {
+    display: none; /* Hide on Desktop */
+}
+
+/* 768px से कम चौड़ाई वाले उपकरणों के लिए (Tablets and Phones) */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 10px 20px;
+    }
+    
+    /* Show Hamburger Icon */
+    .nav-toggle-label {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: var(--gold-color);
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+        margin: 5px 0;
+    }
+    
+    /* Position the 'before' and 'after' lines */
+    .nav-toggle-label span::before {
+        transform: translateY(-8px);
+    }
+    .nav-toggle-label span::after {
+        transform: translateY(3px); /* Adjusted for better spacing */
+    }
+
+    /* Hide the navigation links by default on mobile */
+    .main-nav {
+        display: none;
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--black-color);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .main-nav .nav-link {
+        margin: 0; /* Remove existing margin */
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1); /* Subtle separator */
+        text-align: left;
+    }
+    
+    .main-nav .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    /* Show Nav Menu when checkbox is checked */
+    .nav-toggle:checked ~ .main-nav {
+        display: flex;
+    }
+    
+    /* Hamburger to 'X' animation when checked */
+    .nav-toggle:checked ~ .nav-toggle-label span {
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::before {
+        transform: translateY(0) rotate(90deg);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span::after {
+        transform: translateY(-8px) rotate(-90deg); 
+        opacity: 0; /* Hide the third bar for a clean 'X' look */
+    }
+}
+
+/* --- REST OF THE CSS (No Changes) --- */
+
+/* Hero Section (Black Background, Gold Text) */
+/* ---------- HERO (FIXED LAYOUT) ---------- */
+
+/* Make hero a normal block so children flow vertically (prevents dots jumping to the side) */
+.hero-section {
+  background-color: var(--black-color);
+  color: var(--text-color-light);
+  padding: 60px 5%;
+  text-align: center;
+  border-bottom: 5px solid var(--gold-color);
+
+  display: block;        /* <-- FIX: remove flex layout */
+  align-items: initial;
+  justify-content: initial;
+}
+
+/* Carousel container: block-level and centered */
+.hero-carousel {
+  position: relative;    /* arrows are positioned relative to this */
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;        /* center the carousel in the hero */
+  display: block;        /* ensure vertical stacking of inner elements */
+}
+
+/* Viewport wrapper */
+.hero-track-wrap {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 14px;
+  position: relative;
+}
+
+/* Track (moves horizontally) */
+.hero-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(.2,.9,.3,1);
+  will-change: transform;
+}
+
+/* Each slide is full viewport width */
+.hero-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+/* Card style stays same (no change required) */
+.hero-card {
+  width: 100%;
+  max-width: 720px;
+  padding: 28px;
+  border-radius: 14px;
+  color: var(--text-color-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  border: 1px solid rgba(185,147,54,0.16);
+}
+
+/* Arrows: absolutely positioned over the track, vertically centered */
+.hero-arrow {
+  position: absolute;    /* absolute inside .hero-carousel */
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(185,147,54,0.07);
+  color: var(--text-color-light);
+  border: 1px solid rgba(185,147,54,0.18);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 50;
+  transition: background .12s, transform .12s;
+}
+.hero-arrow:hover { background: rgba(185,147,54,0.16); transform: translateY(-50%) scale(1.02); }
+
+/* left and right positions */
+.hero-prev { left: 8px; }
+.hero-next { right: 8px; }
+
+/* Dots: placed below the track and forced center */
+.hero-dots {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  width: 100%;
+  padding-top: 8px;
+  box-sizing: border-box;
+  /* ensure it's visually below the track */
+}
+
+/* dot style unchanged */
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(121,97,27,0.35);
+  border: 1px solid rgba(185,147,54,0.14);
+  cursor: pointer;
+}
+.hero-dot.active { background: #f5c240; box-shadow: 0 4px 12px rgba(245,194,64,0.14); }
+
+/* Features Section (Off-Black Background) */
+.features-section {
+    padding: 60px 5%;
+    background-color: var(--off-black-bg);
+    text-align: center;
+}
+
+.features-section h2 {
+    color: var(--gold-color);
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); /* Subtle gold glow */
+    background-color: var(--black-color);
+    border: 1px solid var(--gold-color);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: var(--gold-color);
+    margin-top: 0;
+}
+
+/* Test List Section */
+.test-list-section {
+    padding: 50px 5%;
+    text-align: center;
+    background-color: var(--black-color);
+}
+
+.test-list-section h2 {
+    color: var(--gold-color);
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.test-card {
+    background-color: var(--off-black-bg);
+    border: 1px solid var(--gold-color);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    padding: 25px;
+    width: 320px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.test-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.test-card h3 {
+    color: var(--gold-color);
+    margin-top: 0;
+}
+
+.test-count {
+    display: block;
+    color: #00FF7F; /* Bright green for count/success */
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.card-button {
+    background-color: var(--gold-color);
+    color: var(--black-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.card-button:hover {
+    background-color: var(--light-gold-hover);
+}
+
+/* Footer (Pure Black) */
+.main-footer {
+    background-color: var(--black-color);
+    color: var(--gold-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 1px solid var(--gold-color);
+}
+
+/* --- NEW COOL SUBJECT GRID SECTION --- */
+.tests-grid-section {
+    padding: 60px 5%;
+    text-align: center;
+    background-color: var(--black-color); /* Pure Black Background */
+}
+
+.tests-grid-section h2 {
+    color: var(--gold-color);
+    margin-bottom: 50px;
+    font-size: 2.2em;
+    border-bottom: 2px solid var(--gold-color);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.subject-grid {
+    display: grid;
+    /* तीन कॉलम ग्रिड लेआउट */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-card {
+    background-color: var(--off-black-bg);
+    color: var(--text-color-light);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+    
+    /* Cool Effect: Golden Border and Hover Animation */
+    border: 1px solid var(--off-black-bg); /* Initial invisible border */
+    transition: all 0.4s ease-in-out;
+}
+
+.grid-card:hover {
+    transform: translateY(-8px) scale(1.03); /* Lift and enlarge slightly */
+    border: 1px solid var(--gold-color); /* Golden border on hover */
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3); /* Stronger gold glow */
+    background-color: #0d0d0d; /* Slightly darker background on hover */
+}
+
+.card-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--gold-color); /* Icon in Gold */
+}
+
+.card-title {
+    color: var(--gold-color);
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.test-stats {
+    display: block;
+    color: #00FF7F; /* Bright success color */
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.grid-button {
+    background-color: var(--gold-color);
+    color: var(--black-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.grid-button:hover {
+    background-color: var(--light-gold-hover);
+}
+
+
+/* --- HUB SPECIFIC LAYOUT --- */
+.hub-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Hub Header Styling */
+.hub-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    /* Theme Integration */
+    background: var(--black-color);
+    color: var(--text-color-light);
+    border-radius: 12px;
+    border: 2px solid var(--gold-color);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); /* Gold glow */
+}
+
+.hub-header h1 {
+    color: var(--gold-color);
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.hub-header p {
+    color: var(--text-color-light);
+    opacity: 0.9;
+}
+
+/* Test Options Grid */
+.test-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.test-card-hub {
+    /* Theme Integration */
+    background: var(--off-black-bg);
+    border: 1px solid var(--off-black-bg); 
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.2); /* Subtle initial gold glow */
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.test-card-hub:hover {
+    transform: translateY(-8px) scale(1.02);
+    border: 1px solid var(--gold-color); /* Golden border on hover */
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4); /* Stronger gold glow */
+}
+
+.card-icon-hub {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--gold-color); /* Icons in Gold */
+}
+
+.test-card-hub h3 {
+    color: var(--gold-color);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.test-card-hub p {
+    color: var(--text-color-light);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    flex-grow: 1; 
+}
+
+/* Start Button (CTA Style) */
+.test-link {
+    display: inline-block;
+    align-self: flex-start;
+    
+    /* Theme Integration: Gold CTA button style */
+    background: var(--gold-color);
+    color: var(--black-color);
+    
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.test-link:hover {
+    background: var(--light-gold-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+}

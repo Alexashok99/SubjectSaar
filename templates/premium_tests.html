@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}
+Premium Tests (Saar) - Subject Saar
+{% endblock %}
+
+{% block content %}
+<section id="test_resources" class="tests-grid-section">
+        <h2>🎯 High-Yield Mock Tests</h2>
+        
+        <div class="subject-grid">
+            <div class="grid-card" data-subject="mathematics">
+                <div class="card-icon">📐</div>
+                <h3 class="card-title">Advanced Mathematics</h3>
+                <p>Master Calculus, Algebra, and Geometry with targeted practice.</p>
+                <span class="test-stats">25 Tests | 750 Qs</span>
+                <a href="{{ url_for('mathematics_hub') }}"
+                class="grid-button {% if request.path == url_for('mathematics_hub') %}active{% endif %}">
+                    Start Now
+                </a>
+            </div>
+            <div class="grid-card" data-subject="physics">
+                <div class="card-icon">⚛️</div>
+                <h3 class="card-title">Physics Essentials</h3>
+                <p>Test your conceptual clarity in Mechanics and Thermodynamics.</p>
+                <span class="test-stats">15 Tests | 450 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+            <div class="grid-card" data-subject="chemistry">
+                <div class="card-icon">🧪</div>
+                <h3 class="card-title">Chemistry Concepts</h3>
+                <p>Practice for Organic, Inorganic, and Physical Chemistry.</p>
+                <span class="test-stats">12 Tests | 360 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+            <div class="grid-card" data-subject="biology">
+                <div class="card-icon">🧬</div>
+                <h3 class="card-title">Biology Mastery</h3>
+                <p>Detailed tests on Botany, Zoology, and Human Physiology.</p>
+                <span class="test-stats">20 Tests | 600 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="history">
+                <div class="card-icon">📜</div>
+                <h3 class="card-title">Ancient History</h3>
+                <p>Covers Harappan Civilization to Gupta Empire.</p>
+                <span class="test-stats">10 Tests | 300 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="geography">
+                <div class="card-icon">🌍</div>
+                <h3 class="card-title">World Geography</h3>
+                <p>Physical features, Climate, and Political Geography.</p>
+                <span class="test-stats">8 Tests | 240 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="current_affairs">
+                <div class="card-icon">📰</div>
+                <h3 class="card-title">Daily Current Affairs</h3>
+                <p>Updated daily with relevant news and events.</p>
+                <span class="test-stats">30 Tests | 900 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+{% endblock %}

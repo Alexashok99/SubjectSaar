@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}
+Advanced Mathematics Test Hub
+{% endblock %}
+
+{% block content %}
+<div class="hub-container">
+    <div class="hub-header">
+        <h1>Advanced Mathematics Test Hub 📐</h1>
+        <p>Select your preferred test set to start practicing high-yield questions.</p>
+    </div>
+
+    <div class="test-options-grid">
+        
+        <div class="test-card-hub" data-test-id="vvi-set">
+            <div class="card-icon-hub">⭐</div>
+            <h3>Most Saved VVI Set</h3>
+            <p>High-priority questions frequently marked by experts. Full Syllabus.</p>
+            <a href="{{ url_for('run_test', test_id='math_vvi') }}" class="test-link">Start (34 Qs)</a>
+        </div>
+
+        <div class="test-card-hub" data-test-id="top-20">
+            <div class="card-icon-hub">🔥</div>
+            <h3>Top 20 Predicted Questions</h3>
+            <p>Handpicked questions predicted to be highly relevant for exams.</p>
+            <a href="{{ url_for('run_test', test_id='top_20') }}" class="test-link">Start (20 Qs)</a>
+        </div>
+        
+        <div class="test-card-hub" data-test-id="algebra-ch">
+            <div class="card-icon-hub">➗</div>
+            <h3>Chapter Test: Algebra</h3>
+            <p>Focus on Quadratic Equations, Series, and Binomial Theorem.</p>
+            <a href="{{ url_for('run_test', test_id='algebra') }}" class="test-link">Start (15 Qs)</a>
+        </div>
+        
+        <div class="test-card-hub" data-test-id="geometry-ch">
+            <div class="card-icon-hub">🔺</div>
+            <h3>Chapter Test: Coordinate</h3>
+            <p>Circles, Tangents, and Coordinate Geometry problems.</p>
+            <a href="{{ url_for('run_test', test_id='coordinate') }}" class="test-link">Start (14 Qs)</a>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

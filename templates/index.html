@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}
+Welcome to Subject Saar - Home
+{% endblock %}
+
+{% block content %}
+    <section class="hero-section">
+    <div class="hero-carousel">
+        <button class="hero-arrow hero-prev" aria-label="Previous slide">&#10094;</button>
+
+        <div class="hero-track-wrap">
+        <div class="hero-track">
+
+            <!-- Slide 1: Card with background image -->
+            <div class="hero-slide">
+            <div class="hero-card math" data-test-id="mathematics_saar">
+                <h3>Mathematics</h3>
+                <p>Concise notes on Arithmetic and Advanced Mathematics.</p>
+                <span class="test-count">50+ Summaries</span>
+                <button class="card-button">Read Saar</button>
+            </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+            <div class="hero-card physics" data-test-id="physics_saar">
+                <h3>Physics</h3>
+                <p>Quick explanations of Motion, Energy & Modern Physics.</p>
+                <span class="test-count">40+ Summaries</span>
+                <button class="card-button">Read Saar</button>
+            </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+            <div class="hero-card chemistry" data-test-id="chemistry_saar">
+                <h3>Chemistry</h3>
+                <p>Organic, Inorganic & Physical chemistry—simplified.</p>
+                <span class="test-count">45+ Summaries</span>
+                <button class="card-button">Read Saar</button>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+        <button class="hero-arrow hero-next" aria-label="Next slide">&#10095;</button>
+
+        <div class="hero-dots" role="tablist" aria-label="Hero slides">
+        <button class="hero-dot" data-index="0" aria-label="Go to slide 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Go to slide 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Go to slide 3"></button>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="features-section">
+        <h2>Unravel the Essence of Every Subject</h2>
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>Core Concepts</h3>
+                <p>Focus on the most important facts and principles.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Quick Revision</h3>
+                <p>Perfect notes for last-minute review and memory recall.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Expert Verified</h3>
+                <p>All content is checked for accuracy and completeness.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- templates/index.html (snippet) -->
+<section id="tests" class="test-list-section">
+  <h2>Popular Subject Saars</h2>
+
+  <div class="cards-carousel">
+    <button class="cards-arrow cards-prev" aria-label="Previous">&#10094;</button>
+
+    <div class="cards-viewport">
+      <div class="cards-track">
+        {{ summaries_cards_html|safe }}
+      </div>
+    </div>
+
+    <button class="cards-arrow cards-next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <div class="cards-dots" aria-hidden="false"></div>
+</section>
+
+<!-- include JS at bottom -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/maincss.css') }}">
+
+    <section id="test_resources" class="tests-grid-section">
+        <h2>🎯 High-Yield Mock Tests</h2>
+        
+        <div class="subject-grid">
+            <div class="grid-card" data-subject="mathematics">
+                <div class="card-icon">📐</div>
+                <h3 class="card-title">Advanced Mathematics</h3>
+                <p>Master Calculus, Algebra, and Geometry with targeted practice.</p>
+                <span class="test-stats">25 Tests | 750 Qs</span>
+                <a href="{{ url_for('mathematics_hub') }}"
+                class="grid-button {% if request.path == url_for('mathematics_hub') %}active{% endif %}">
+                    Start Now
+                </a>
+            </div>
+            <div class="grid-card" data-subject="physics">
+                <div class="card-icon">⚛️</div>
+                <h3 class="card-title">Physics Essentials</h3>
+                <p>Test your conceptual clarity in Mechanics and Thermodynamics.</p>
+                <span class="test-stats">15 Tests | 450 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+            <div class="grid-card" data-subject="chemistry">
+                <div class="card-icon">🧪</div>
+                <h3 class="card-title">Chemistry Concepts</h3>
+                <p>Practice for Organic, Inorganic, and Physical Chemistry.</p>
+                <span class="test-stats">12 Tests | 360 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+            <div class="grid-card" data-subject="biology">
+                <div class="card-icon">🧬</div>
+                <h3 class="card-title">Biology Mastery</h3>
+                <p>Detailed tests on Botany, Zoology, and Human Physiology.</p>
+                <span class="test-stats">20 Tests | 600 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="history">
+                <div class="card-icon">📜</div>
+                <h3 class="card-title">Ancient History</h3>
+                <p>Covers Harappan Civilization to Gupta Empire.</p>
+                <span class="test-stats">10 Tests | 300 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="geography">
+                <div class="card-icon">🌍</div>
+                <h3 class="card-title">World Geography</h3>
+                <p>Physical features, Climate, and Political Geography.</p>
+                <span class="test-stats">8 Tests | 240 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+            
+            <div class="grid-card" data-subject="current_affairs">
+                <div class="card-icon">📰</div>
+                <h3 class="card-title">Daily Current Affairs</h3>
+                <p>Updated daily with relevant news and events.</p>
+                <span class="test-stats">30 Tests | 900 Qs</span>
+                <button class="grid-button">Start Now</button>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

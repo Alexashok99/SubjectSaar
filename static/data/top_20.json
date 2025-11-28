@@ -1,0 +1,38 @@
+{
+  "config": {
+    "testName": "Top 20",
+    "testId": "TOP00001",
+    "durationMinutes": 2,  
+    "totalMarks": 4,
+    "marksPerQuestion": 2,
+    "negativeMarking": 0.5,
+    "nameDisplay": "Bijay Mahto"
+  },
+  "questions": [
+  {
+    "question_index": 1,
+    "correct_option_id": 1,
+    "question": "<span class=\"eqt\">The total surface area of a solid hemisphere is $155\\text{ cm}^2$. Its radius (in cm) is (Take $\\pi=\\frac{22}{7}$):</span><span class=\"hqt\">एक ठोस अर्धगोले का कुल पृष्ठीय क्षेत्रफल $155\\text{ cm}^2$ है। इसकी त्रिज्या (सेमी में) है (मान लीजिए $\\pi=\\frac{22}{7}$):</span>",
+    "options": [
+      "<span class=\"eqt\">$\\sqrt{\\frac{1094}{66}}$</span><span class=\"hqt\">$\\sqrt{\\frac{1094}{66}}$</span>",
+      "<span class=\"eqt\">$\\sqrt{\\frac{1085}{66}}$</span><span class=\"hqt\">$\\sqrt{\\frac{1085}{66}}$</span>",
+      "<span class=\"eqt\">$\\sqrt{\\frac{1077}{132}}$</span><span class=\"hqt\">$\\sqrt{\\frac{1077}{132}}$</span>",
+      "<span class=\"eqt\">$\\sqrt{\\frac{1090}{66}}$</span><span class=\"hqt\">$\\sqrt{\\frac{1090}{66}}$</span>"
+    ],
+    "solution": "<span class=\"eqt\"><p>Total Surface Area (TSA) of a solid hemisphere is $3\\pi r^{2}$. Given: $3 \\times \\frac{22}{7} \\times r^{2} = 155$. Solving for $r^2$: $r^{2} = \\frac{155 \\times 7}{3 \\times 22} = \\frac{1085}{66}$. Radius $r = \\sqrt{\\frac{1085}{66}} \\text{ cm}$.</p><p><strong>Related Fact:</strong> The Curved Surface Area (CSA) of a hemisphere is $2\\pi r^{2}$. The ratio of TSA to CSA is <strong>$3:2$</strong>.</p></span><span class=\"hqt\"><p>एक ठोस अर्धगोले का कुल पृष्ठीय क्षेत्रफल (TSA) $3\\pi r^{2}$ होता है। दिया गया: $3 \\times \\frac{22}{7} \\times r^{2} = 155$। $r^2$ के लिए हल करने पर: $r^{2} = \\frac{155 \\times 7}{3 \\times 22} = \\frac{1085}{66}$। त्रिज्या $r = \\sqrt{\\frac{1085}{66}} \\text{ सेमी}$।</p><p><strong>संबंधित तथ्य:</strong> अर्धगोले का वक्र पृष्ठीय क्षेत्रफल (CSA) $2\\pi r^{2}$ होता है। TSA और CSA का अनुपात <strong>$3:2$</strong> है।</p></span>"
+  },
+  {
+    "question_index": 2,
+    "correct_option_id": 1,
+    "question": "<span class=\"eqt\">LMNO is a cyclic quadrilateral such that $\\angle M=102^{\\circ}$. The tangents at L and N meet at a point P. What is the measure of $\\angle LPN$?</span><span class=\"hqt\">LMNO एक चक्रीय चतुर्भुज है जिसमें $\\angle M=102^{\\circ}$ है । L और N पर स्पर्श रेखाएँ बिंदु P पर मिलती हैं। $\\angle LPN$ का माप क्या है ?</span>",
+    "options": [
+      "<span class=\"eqt\">$26^{\\circ}$</span><span class=\"hqt\">$26^{\\circ}$</span>",
+      "<span class=\"eqt\">$24^{\\circ}$</span><span class=\"hqt\">$24^{\\circ}$</span>",
+      "<span class=\"eqt\">$20^{\\circ}$</span><span class=\"hqt\">$20^{\\circ}$</span>",
+      "<span class=\"eqt\">$22^{\\circ}$</span><span class=\"hqt\">$22^{\\circ}$</span>"
+    ],
+    "solution": "<span class=\"eqt\"><p>Let C be the center of the circle. The angle $\\angle M=102^{\\circ}$ is the angle in the major segment.</p><p>The central angle $\\angle LCN$ (reflex) $= 2 \\angle M = 2(102^{\\circ}) = 204^{\\circ}$.</p><p>The minor central angle $\\angle LCN$ (minor) $= 360^{\\circ} - 204^{\\circ} = 156^{\\circ}$.</p><p>The angle between the tangents $\\angle LPN$ and the minor central angle $\\angle LCN$ are supplementary (sum is $180^{\\circ}$).</p><p>Therefore, $\\angle L P N = 180^{\\circ} - 156^{\\circ} = 24^{\\circ}$.</p><p><strong>Related Fact:</strong> The angle between the tangents drawn from an external point to a circle is <strong>supplementary</strong> to the angle subtended by the chord of contact at the center.</p></span><span class=\"hqt\"><p>मान लीजिए $C$ वृत्त का केंद्र है। $\\angle M=102^{\\circ}$ दीर्घ चाप में बना कोण है।</p><p>केंद्रीय कोण $\\angle LCN$ (दीर्घ) $= 2 \\angle M = 2(102^{\\circ}) = 204^{\\circ}$।</p><p>लघु केंद्रीय कोण $\\angle LCN$ (लघु) $= 360^{\\circ} - 204^{\\circ} = 156^{\\circ}$।</p><p>स्पर्शरेखाओं $\\angle LPN$ के बीच का कोण और लघु केंद्रीय कोण $\\angle LCN$ का योग $180^{\\circ}$ होता है।</p><p>इसलिए, $\\angle L P N = 180^{\\circ} - 156^{\\circ} = 24^{\\circ}$ (विकल्प 1)।</p><p><strong>संबंधित तथ्य:</strong> किसी बाहरी बिंदु से वृत्त पर खींची गई स्पर्शरेखाओं के बीच का कोण, संपर्क जीवा द्वारा केंद्र पर बनाए गए कोण का <strong>संपूरक</strong> होता है।</p></span>"
+  }
+
+]
+}
